@@ -26,20 +26,11 @@ namespace ComputerStructure
         //1 = online
         //-1 = offline
         //--------------------------------------------MAKE NODES---------------------------------------------------//
-        /// <summary>
-        /// Used for making XML Nodes
-        /// </summary>
-        /// <param name="HostBlock"></param>
-        /// <param name="DataBlock"></param>
         public ComputerNode(string HostBlock, string DataBlock)
         {
             hostBlock = HostBlock;
             dataBlock = DataBlock;
         }
-
-        /// <summary>
-        /// Used to Make node from a Search
-        /// </summary>
         public ComputerNode()
         {
             hostBlock = hostName;
@@ -50,13 +41,13 @@ namespace ComputerStructure
         {
             get { return isp; }
             set { isp = value; }
-        }//tells isp
+        }
         public string HostOS
         {
             get { return os; }
             set { os = value; }
-        }//tells os
-        public string HostName//gives the unfiltered string for host name
+        }
+        public string HostName
         {
             get
             {
@@ -73,7 +64,7 @@ namespace ComputerStructure
             }
 
         }
-        public string HostCity//gives sorted out city
+        public string HostCity
         {
             get { return city; }
             set
@@ -81,7 +72,7 @@ namespace ComputerStructure
                 city = value;
             }
         }
-        public string HostCountry//gives sorted out country
+        public string HostCountry
         {
             get { return country; }
             set
@@ -89,7 +80,7 @@ namespace ComputerStructure
                 country = value;
             }
         }
-        public string HostIP//gives sorted out ip
+        public string HostIP
         {
             get
             {
@@ -105,7 +96,7 @@ namespace ComputerStructure
                 ip = value;
             }
         }
-        public string HostLatitude//gives sorted out lat
+        public string HostLatitude
         {
             get { return latitude; }
             set
@@ -113,7 +104,7 @@ namespace ComputerStructure
                 latitude = value;
             }
         }
-        public string HostLongitude//gives sorted out long
+        public string HostLongitude
         {
             get { return longitude; }
             set
@@ -121,7 +112,7 @@ namespace ComputerStructure
                 longitude = value;
             }
         }
-        public string HostPorts//gives sorted out port
+        public string HostPorts
         {
             get { return port; }
             set
@@ -140,12 +131,12 @@ namespace ComputerStructure
                 ports = value;
             }
         }
-        public string DataBlock//gives unsorted and un filtered datablock
+        public string DataBlock
         {
             get { return dataBlock; }
             set { dataBlock = value; }
         }
-        public int OnlineStatus//is the device Verified to be online
+        public int OnlineStatus
         {
             get
             {

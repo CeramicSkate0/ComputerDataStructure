@@ -86,7 +86,7 @@ namespace ComputerStructure
             {
                 if (ip == null)
                 {
-                    return ip = "NO IP";
+                    return ip = "NO IP";//How you found it IDK 
                 }
                 else
                     return ip;
